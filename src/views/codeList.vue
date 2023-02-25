@@ -71,7 +71,7 @@
           >
             <div class="div_block">
               <div class="block_header">
-                <p class="title" @click="goDetails(code)">{{ code.contractName }}</p>
+                <el-button class="title" type="text" style="padding:0" @click="goDetails(code)">{{ code.contractName }}</el-button>
 <!--                <p class="r_title">call in last month: {{ code.callInLastMonth }}</p>-->
               </div>
               <div class="block_body">
@@ -287,6 +287,9 @@ export default {
             font-size: 18px;
             color: #028DF1;
             float: left;
+          }
+          .title:hover{
+            text-shadow: 1px 1px 1px #028DF1;
           }
           .r_title{
             float: right;
